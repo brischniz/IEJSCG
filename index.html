@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Personen</title>
+        <style>
+            #personen {
+                width: 500px;
+                
+            }
+            #personen > div {
+                border: 1px solid black;
+                width: 200px;
+                float: left;
+                padding: 5px;
+            }
+            #personen .w .name {
+                background-color: #62cef1;
+            } 
+            #personen .m .name {
+                background-color: #efefef;
+            } 
+        </style>
+    </head>
+
+    <body>
+        <div id="">
+            <h3>Kursteilnehmer</h3>
+            <div>Anzahl der Teilnehmer: <span id="count"></span></div>
+            <div id="names"></div>
+        </div>
+
+        <div id="">
+            <h3>Alle Teilnehmer des Kurses</h3>
+            <ul id="names3"></ul>
+        </div>
+
+        <div id="time"></div>
+
+        <div id="form">
+            <h3>Kursanmeldung</h3>
+            <form id="myform">
+                <input type="text" name="Name" placeholder="Nachname eingeben"/><br>
+                <input type="text" name="Vorname" placeholder="Vorname eingeben"/><br>
+                <input type="text" name="EMail" placeholder="E-Mail eingeben"/><br>
+                <input type="text" name="Wohnort" placeholder="Wohnort eingeben"/><br>
+                <input type="button" value="mich anmelden" onclick="validateAndSend()" /><br>
+                <input type="button" value="löschen" style="background-color: red;" onclick="deleteData()"/>
+            </form>
+            <div id="msg"></div>
+        </div>
+
+        <hr>
+
+        <h3>Daten der Teilnehmer</h3>
+        <div id="personen"></div>
+        
+        <script src="app.js" type="text/javascript"></script>
+    </body>
+</html>
