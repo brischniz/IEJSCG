@@ -46,6 +46,7 @@ function validateAndSend() {
         let firstName = document.querySelectorAll("#myform > input[name='Vorname']")[0].value;
         let location = document.querySelectorAll("#myform > input[name='Wohnort']")[0].value;
         let email = document.querySelectorAll("#myform > input[name='EMail']")[0].value;
+        // console.log(0);
     
         msg.innerHTML = "Vielen Dank<br/>" + name + ", " + firstName + " aus " + location + "<br/>" + "E-Mail: " + email;
     }
